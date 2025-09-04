@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST KAH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="todo-app">
+        <h1>Todo List kah</h1>
+
+        <form class="todo-form">
+            <div class="form-inputs">
+                <input type="text" id="todo-input" placeholder="Add a new task..." aria-label="New todo input">
+                <input type="date" id="todo-date" aria-label="Due date">
+            </div>
+            <button type="submit" class="btn add-btn" aria-label="Add new todo"><i class="fas fa-plus"></i></button>
+        </form>
+
+        <div class="controls">
+            <div class="filter-container">
+                <select id="filter-todos" class="btn filter-btn">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="incomplete">Incomplete</option>
+                </select>
+            </div>
+            <button id="delete-all-btn" class="btn delete-all-btn">Delete All</button>
+        </div>
+
+        <div class="todo-list-container">
+            <div class="list-header">
+                <span class="header-task">tugas</span>
+                <span class="header-date">deadline</span>
+                <span class="header-status">Status</span>
+                <span class="header-actions">action</span>
+            </div>
+            <ul class="todo-list"></ul>
+            <p class="no-task-message">tidak ada tugas disini✨</p>
+        </div>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Todo List kah. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
